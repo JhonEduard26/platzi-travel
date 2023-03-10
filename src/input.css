@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .Card {
+    @apply flex-none w-60 lg:w-80 h-auto mb-6 cursor-pointer snap-center bg-slate-100 rounded-lg shadow-md even:bg-sky-200 transition duration-150 hover:scale-110
+  }
+}
