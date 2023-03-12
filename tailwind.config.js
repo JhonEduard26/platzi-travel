@@ -24,7 +24,12 @@ module.exports = {
         'paris': "url('/public/assets/imgs/paris.jpg')",
         'san-francisco': "url('/public/assets/imgs/san-francisco.jpg')",
         'venecia': "url('/public/assets/imgs/venecia.jpg')",
-        'hero': "url('/public/assets/imgs/san-francisco.jpg')"
+        'hero': "url('/public/assets/imgs/san-francisco.jpg')",
+        'hotel1': "url('/public/assets/imgs/hotel-1.jpg')",
+        'hotel2': "url('/public/assets/imgs/hotel-2.jpg')",
+        'hotel3': "url('/public/assets/imgs/hotel-3.jpg')",
+        'hotel4': "url('/public/assets/imgs/hotel-4.jpg')",
+        'hotel5': "url('/public/assets/imgs/hotel-5.jpg')",
       }
     }
   },

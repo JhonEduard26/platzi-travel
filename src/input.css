@@ -6,4 +6,7 @@
   .Card {
     @apply flex-none w-60 lg:w-80 h-auto mb-6 cursor-pointer snap-center bg-slate-100 rounded-lg shadow-md even:bg-sky-200 transition duration-150 hover:scale-110
   }
+  .Subtitle {
+    @apply text-3xl font-semibold pl-6 mb-6 text-headLine
+  }
 }
