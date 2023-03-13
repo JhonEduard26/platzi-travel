@@ -10,7 +10,7 @@
   <title>Platzi Travel</title>
 </head>
 
-<body class="bg-background">
+<body>
   <header class="hidden lg:block">
     <nav>
       <p>Platzi travel</p>
@@ -27,8 +27,14 @@
       </ul>
     </nav>
   </header>
+  <div id="tab-bar">
+    <a href="#home">svg</a>
+    <a href="#recommended">svg</a>
+    <a href="#trending">svg</a>
+    <a href="#faqs">svg</a>
+  </div>
   <main>
-    <section id="home" class="h-screen">
+    <section id="home" class="h-screen mb-6">
       <div
         class="flex flex-col justify-around items-center lg:items-start lg:justify-center lg:gap-8 lg:pl-16 h-full bg-hero bg-no-repeat bg-center">
         <div class="flex justify-center items-center w-4/5 h-16 bg-white rounded-full shadow-xl lg:hidden">
@@ -37,8 +43,9 @@
         </div>
         <h2 class="hidden lg:block text-4xl font-bold text-headLine">Find more locations <br /> like this</h2>
         <button
-          class="w-48 p-2 rounded-full font-semibold bg-blue-500 text-white text-xl shadow-xl transition delay-100 hover:bg-blue-600">Explore
-          more</button>
+          class="w-52 p-2 rounded-full font-semibold bg-sky-400 text-white text-2xl shadow-xl transition delay-100 hover:bg-sky-500">
+          Explorar mas
+        </button>
       </div>
     </section>
     <section id="recommended" class="mb-12">
@@ -130,17 +137,17 @@
           <p class="mb-2 text-headLine font-medium text-xl lg:text-3xl">Métodos de pago</p>
           <p class="lg:text-2xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
-  
+
         <div>
           <p class="mb-2 text-headLine font-medium text-xl lg:text-3xl">Politica de reembolso</p>
           <p class="lg:text-2xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
-  
+
         <div>
           <p class="mb-2 text-headLine font-medium text-xl lg:text-3xl">Estadias largas</p>
           <p class="lg:text-2xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
         </div>
-  
+
         <div>
           <p class="mb-2 text-headLine font-medium text-xl lg:text-3xl">Politica de reembolso</p>
           <p class="lg:text-2xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
@@ -153,6 +160,21 @@
       </div>
     </section>
   </main>
+  <footer class="bg-gray-50 border-y-2 border-gray-100 px-6">
+    <h2 class="font-semibold text-xl text-gray-400 my-4">About us</h2>
+    <ul class="flex flex-col gap-y-2 text-gray-400 mb-6">
+      <li>Inversores</li>
+      <li>Trabajos</li>
+      <li>Politica de privacidad</li>
+      <li>Términos y condiciones</li>
+      <li>Platzi travel, inc</li>
+      <li>Siguenos</li>
+      <li>
+        <span>🐦</span>
+        <span>📷</span>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>

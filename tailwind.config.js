@@ -4,15 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        button: '#3da9fc',
-        buttonText: '#fffffe',
+        cardHeading: '#094067',
         headLine: '#094067',
-        paragraph: '#5f6c7b',
         highlight: '#3da9fc',
         main: '#fffffe',
+        paragraph: '#5f6c7b',
         secondary: '#90b4ce',
         tertiary: '#ef4565',
-        cardHeading: '#094067',
       },
       backgroundImage: {
         'cartagena': "url('/public/assets/imgs/cartagena.jpg')",
