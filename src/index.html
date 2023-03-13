@@ -27,8 +27,7 @@
       </ul>
     </nav>
   </header>
-  <div id="tab-bar"
-    class="fixed h-16 bottom-0 left-0 right-0 bg-white border-t-2 z-10">
+  <div id="tab-bar" class="fixed h-16 bottom-0 left-0 right-0 bg-white border-t-2 z-10 lg:hidden">
     <ul class="flex justify-evenly items-center h-full">
       <a href="#home" class="hover:text-sky-400">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -131,30 +130,28 @@
     </section>
     <section id="trending" class="mb-12">
       <h2 class="Subtitle">Estadias en tendencia</h2>
-      <div class="flex flex-col gap-y-6 px-6">
+      <div class="grid gap-y-6 px-6 lg:gap-12 lg:px-12 lg:grid-cols-3 lg:grid-rows-3">
 
-        <div class="CardTrending bg-hotel1">
-          <p class="text-2xl font-semibold text-white">Chicago</p>
-          <p class="text-xl text-neutral-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="CardTrending bg-hotel1 lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2">
+          <p class="text-2xl font-semibold text-white lg:text-3xl">Chicago</p>
+          <p class="text-xl text-neutral-100 lg:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
 
-        <div class="CardTrending bg-hotel2">
-          <p class="text-2xl font-semibold text-white">Chicago</p>
-          <p class="text-xl text-neutral-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="CardTrending bg-hotel2 lg:h-auto lg:row-start-2 lg:row-end-4 lg:col-start-1 lg:col-end-2">
+          <p class="text-2xl font-semibold text-white lg:text-3xl">Chicago</p>
+          <p class="text-xl text-neutral-100 lg:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
 
-
-        <div class="CardTrending bg-hotel3">
-          <p class="text-2xl font-semibold text-white">Chicago</p>
-          <p class="text-xl text-neutral-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="CardTrending bg-hotel3 lg:col-start-2 lg:col-end-4">
+          <p class="text-2xl font-semibold text-white lg:text-3xl">Chicago</p>
+          <p class="text-xl text-neutral-100 lg:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-
-        <div class="CardTrending bg-hotel4">
-          <p class="text-2xl font-semibold text-white">Chicago</p>
-          <p class="text-xl text-neutral-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        
+        <div class="CardTrending bg-hotel4 lg:col-start-2 lg:col-end-4">
+          <p class="text-2xl font-semibold text-white lg:text-3xl">Chicago</p>
+          <p class="text-xl text-neutral-100 lg:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
       </div>
-
       </div>
     </section>
     <section id="faqs" class="mb-12">
