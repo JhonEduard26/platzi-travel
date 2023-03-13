@@ -11,19 +11,31 @@
 </head>
 
 <body>
-  <header class="hidden lg:block">
-    <nav>
-      <p>Platzi travel</p>
-      <ul>
+  <header class="hidden lg:block lg:h-16 lg:px-12 lg:border-b-2">
+    <nav class="flex justify-between items-center h-full text-headLine font-bold">
+      <p>Platzi Travel</p>
+      <ul class="flex gap-x-8">
         <li><a href="#">Locations</a></li>
         <li><a href="#">Stays</a></li>
         <li><a href="#">FAQs</a></li>
         <li><a href="#">About us</a></li>
       </ul>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
+      <ul class="flex items-center gap-x-4">
+        <li class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>          
+        </li>
+        <li class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+          </svg>          
+        </li>
+        <li class="cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+          </svg>          
+        </li>
       </ul>
     </nav>
   </header>
