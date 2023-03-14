@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es" class="scroll-smooth dark">
 
 <head>
   <meta charset="UTF-8">
@@ -15,10 +15,10 @@
     <nav class="flex justify-between items-center h-full text-headLine dark:text-white font-bold">
       <p>Platzi Travel</p>
       <ul class="flex gap-x-8">
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">Stays</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="#recommended">Locations</a></li>
+        <li><a href="#trending">Stays</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#footer">About us</a></li>
       </ul>
       <ul class="flex items-center gap-x-4">
         <li class="cursor-pointer">
@@ -28,13 +28,13 @@
               d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>
         </li>
-        <li class="cursor-pointer">
+        <button id="toggleBtnDesktop" class="dark:text-sky-400">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-            class="w-5 h-5">
+            class="w-5 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
           </svg>
-        </li>
+        </button>
         <li class="cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
             class="w-5 h-5">
@@ -62,9 +62,11 @@
         </svg>
       </a>
       <button id="toggleBtn" class="hover:text-sky-400 dark:text-sky-400">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-        </svg>        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+        </svg>
       </button>
       <a href="#faqs" class="hover:text-sky-400">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -180,7 +182,7 @@
     </section>
     <section id="faqs" class="mb-12">
       <h2 class="Subtitle">FAQs</h2>
-      <div class="flex flex-col gap-y-6 px-6">
+      <div class="flex flex-col gap-y-6 px-6 lg:px-12">
         <div>
           <p class="mb-2 text-headLine font-medium text-xl lg:text-3xl dark:text-white">Métodos de pago</p>
           <p class="lg:text-2xl dark:text-gray-300">Aceptamos VISA, MasterCard, American Express, Paypal y Binance</p>
@@ -208,9 +210,9 @@
       </div>
     </section>
   </main>
-  <footer class="bg-gray-50 border-y-2 border-gray-100 px-6">
+  <footer id="footer" class="bg-gray-50 border-y-2 border-gray-100 px-6 lg:px-12">
     <h2 class="font-semibold text-xl text-gray-400 my-4">About us</h2>
-    <ul class="flex flex-col gap-y-2 text-gray-400 mb-20">
+    <ul class="flex flex-col gap-y-2 text-gray-400 mb-20 lg:mb-6">
       <li>Inversores</li>
       <li>Trabajos</li>
       <li>Politica de privacidad</li>
@@ -223,8 +225,13 @@
   <script>
     const htmlElement = document.querySelector('html')
     const toggleButton = document.querySelector('#toggleBtn')
+    const toggleButtonDesktop = document.querySelector('#toggleBtnDesktop')
 
     toggleButton.addEventListener('click', () => {
+      htmlElement.classList.toggle('dark')
+    })
+
+    toggleButtonDesktop.addEventListener('click', () => {
       htmlElement.classList.toggle('dark')
     })
   </script>
