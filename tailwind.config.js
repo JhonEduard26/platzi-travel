@@ -7,10 +7,6 @@ module.exports = {
         cardHeading: '#094067',
         headLine: '#094067',
         highlight: '#3da9fc',
-        main: '#fffffe',
-        paragraph: '#5f6c7b',
-        secondary: '#90b4ce',
-        tertiary: '#ef4565',
       },
       backgroundImage: {
         'cartagena': "url('/public/assets/imgs/cartagena.jpg')",
@@ -31,5 +27,6 @@ module.exports = {
       }
     }
   },
+  darkMode: 'class',
   plugins: [],
 }
